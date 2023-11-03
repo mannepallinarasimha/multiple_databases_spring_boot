@@ -1,0 +1,18 @@
+#MYSQL
+spring.user.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.user.datasource.url = jdbc:mysql://localhost:3306/multidb1?createDatabaseIfNotExist=true
+spring.user.datasource.username = nara
+spring.user.datasource.password = nara
+spring.jpa.show-sql = true
+#spring.user.jpa.hibernate.ddl-auto = update
+#spring.user.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL8Dialect
+server.port=9090
+
+
+#H2 DB
+spring.book.datasource.url=jdbc:h2:mem:multidb2
+spring.book.datasource.driverClassName=org.h2.Driver
+spring.book.datasource.username=sa
+spring.book.datasource.password=
+spring.book.jpa.database-platform=org.hibernate.dialect.H2Dialect
+spring.h2.console.enabled=true

@@ -1,0 +1,5 @@
+package com.nara.multiple.user.repository;
+
+public interface BookRepository {
+
+}

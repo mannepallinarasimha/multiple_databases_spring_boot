@@ -1,0 +1,13 @@
+package com.nara.multiple;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class SpringMultipleDbsApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(SpringMultipleDbsApplication.class, args);
+	}
+
+}

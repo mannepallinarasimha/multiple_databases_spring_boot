@@ -1,0 +1,36 @@
+package com.nara.multiple;
+
+import java.util.stream.Stream;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.nara.multiple.book.repository.BookRepository;
+import com.nara.multiple.user.repository.UserRepository;
+
+import jakarta.annotation.PostConstruct;
+
+@SpringBootApplication
+@RestController
+public class SpringMultipleDbsApplication {
+	
+	@Autowired
+	private UserRepository userRepository;
+	
+	@Autowired
+	private BookRepository bookRepository;
+	
+	
+	@PostConstruct
+	public void addData2DB() {
+		userRepository.saveAll(Stream.of(new User(1, "Narasimha")), new User(2, "Priyanka"));
+		
+	}
+
+	public static void main(String[] args) {
+		SpringApplication.run(SpringMultipleDbsApplication.class, args);
+	}
+
+}

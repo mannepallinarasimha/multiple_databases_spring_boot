@@ -1,0 +1,5 @@
+package com.nara.multiple.model.user;
+
+public class User {
+
+}

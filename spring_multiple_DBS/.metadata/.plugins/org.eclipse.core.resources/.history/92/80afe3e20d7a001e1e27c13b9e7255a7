@@ -1,0 +1,5 @@
+package com.nara.multiple.model.book;
+
+public class Book {
+
+}

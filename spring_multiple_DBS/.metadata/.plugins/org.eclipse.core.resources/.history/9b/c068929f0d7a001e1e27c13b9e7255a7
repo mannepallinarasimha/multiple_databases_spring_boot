@@ -1,0 +1,9 @@
+package com.nara.multiple.user.repository;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.nara.multiple.model.user.User;
+
+public interface UserRepository extends JpaRepository<User, Long>{
+
+}

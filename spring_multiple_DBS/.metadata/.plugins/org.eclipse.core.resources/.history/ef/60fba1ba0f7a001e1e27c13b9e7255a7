@@ -1,0 +1,5 @@
+package com.nara.multiple.user.dbconfig;
+
+public class UserDBConfig {
+
+}
